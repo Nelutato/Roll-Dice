@@ -1,0 +1,45 @@
+*
+{
+    text-align: center;
+    margin:auto;
+    font-size: 1.5rem;
+    margin: 1px;
+    color: white;
+    
+}
+body, html
+{
+    background-image: url('background.jpeg');
+    background-size: cover;
+    margin: 0px;
+    padding: 5px;
+}
+#dataOut
+{
+    margin-bottom: 10px;
+}
+#dice
+{
+    display: none;
+    opacity: 70%;
+}
+table *
+{
+    border:1px solid black;
+    background-color: rgba(0, 0, 0, 0.233) ;
+}
+.left
+{
+    float:left;
+    padding-top: 10% ;
+    padding-left: 10%;
+}
+.right
+{
+    float:right;
+}
+button
+{
+    background-color: black;
+    border: 1px red solid;
+}
