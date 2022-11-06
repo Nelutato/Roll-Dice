@@ -14,7 +14,7 @@
         }
         
         rolls.push(roll);
-        dice.src = "./dice" + roll + ".jpg" ;
+        dice.src = "./img/dice" + roll + ".jpg" ;
         scores(roll);
     }
 
