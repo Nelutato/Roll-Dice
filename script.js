@@ -4,7 +4,10 @@
     let rolls = [];
     let scoreHeaders = ' <tr> <th> rzut </th> <th> wynik</th> </tr>';
 
-    function newRoll()
+    let RollButton = document.getElementById("rollDiceBtn");
+    let WhipeButton = document.getElementById("whipeBoardBtn");
+
+    RollButton.addEventListener("click" , function() 
     {
         var roll = rollDice();
         if(diceText.hidden == false)
@@ -16,8 +19,18 @@
         rolls.push(roll);
         dice.src = "./img/dice" + roll + ".jpg" ;
         scores(roll);
-    }
+    });
 
+    WhipeButton.addEventListener("click", function()
+    {
+        hideText(false);
+        showDice("none");
+        dice.src="#";
+        clearScore();
+        rolls = [];
+    })
+
+    
     function scores(roll)
     {
         rowNumber = rolls.length
@@ -40,11 +53,3 @@
     function clearScore()
         {scoreTab.innerHTML= scoreHeaders}
 
-    function whipeBoard()
-    {
-        hideText(false);
-        showDice("none");
-        dice.src="#";
-        clearScore();
-        rolls = [];
-    }
